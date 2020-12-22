@@ -1,0 +1,26 @@
+<component name="libraryTable">
+  <library name="com.lowagie.text-2.1.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/com.lowagie.text-2.1.7.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-beanutils-1.9.4-tests.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-beanutils-1.9.4.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-collections-3.2.1.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-digester-2.1.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-javaflow-20060411.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/core-3.3.0.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/groovy-all-2.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/itext-pdfa-5.4.0.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/itextpdf-5.1.0.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/jasperreports-6.2.0.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/jasperreports-javaflow-6.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-beanutils-1.9.4-javadoc.jar!/" />
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/core-3.3.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/OneDrive/Desktop/Jasber lib/commons-beanutils-1.9.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

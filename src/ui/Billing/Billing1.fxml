@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Billing.billing">
+   <center>
+      <HBox prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER_RIGHT" prefHeight="526.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Region prefHeight="34.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXDatePicker fx:id="txtinvoicedate" defaultColor="#300d39" disable="true" editable="false" layoutX="110.0" layoutY="355.0" maxWidth="200.0" prefHeight="27.0" prefWidth="200.0" promptText="Invoice Date">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXDatePicker>
+                        <Region layoutX="10.0" layoutY="10.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXComboBox fx:id="txtpmode" labelFloat="true" maxWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Payment Mode">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXComboBox>
+                        <Region layoutX="10.0" layoutY="69.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXTextField fx:id="txtamt" editable="false" labelFloat="true" layoutX="10.0" layoutY="95.0" maxWidth="200.0" prefWidth="200.0" promptText="Total Billing Amount" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <Region layoutX="10.0" layoutY="120.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXTextField fx:id="txtpaidamt" labelFloat="true" layoutX="10.0" layoutY="146.0" maxWidth="200.0" prefWidth="200.0" promptText="Amount Received" text="0.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <Region layoutX="10.0" layoutY="171.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXTextField fx:id="txtdiscountamt" labelFloat="true" layoutX="10.0" layoutY="197.0" maxWidth="200.0" prefWidth="200.0" promptText="Special Discount" text="0.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <Region layoutX="10.0" layoutY="222.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXTextField fx:id="txtunpaidamt" editable="false" labelFloat="true" layoutX="10.0" layoutY="248.0" maxWidth="200.0" prefWidth="200.0" promptText="Due Balance Amount" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXTextField>
+                        <Region layoutX="10.0" layoutY="273.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXDatePicker fx:id="txtsampledate" defaultColor="#300d39" editable="false" maxWidth="200.0" overLay="true" prefHeight="27.0" prefWidth="200.0" promptText="Sample Received Date" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXDatePicker>
+                        <Region layoutX="10.0" layoutY="324.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXTimePicker fx:id="txtsampletime" maxWidth="200.0" prefWidth="200.0" promptText="Sample Received Time" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXTimePicker>
+                        <Region layoutX="110.0" layoutY="472.0" prefHeight="26.0" prefWidth="379.0" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                     </children>
+                  </VBox>
+                  <JFXButton fx:id="btnback" contentDisplay="CENTER" onAction="#onback" text=" " AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <graphic>
+                        <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" size="30" />
+                     </graphic>
+                  </JFXButton>
+               </children>
+            </AnchorPane>
+            <AnchorPane HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox alignment="CENTER_LEFT" prefHeight="526.0" prefWidth="400.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <Region prefHeight="38.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXDatePicker fx:id="txtreportdate" defaultColor="#300d39" editable="false" maxWidth="200.0" prefHeight="30.0" prefWidth="200.0" promptText="Report Delivery Date">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXDatePicker>
+                        <Region layoutX="110.0" layoutY="473.0" prefHeight="30.0" prefWidth="200.0">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </Region>
+                        <JFXTimePicker fx:id="txtreporttime" maxWidth="200.0" prefWidth="200.0" promptText="Report Delivery Time" VBox.vgrow="ALWAYS">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXTimePicker>
+                        <Region layoutX="110.0" layoutY="200.0" prefHeight="30.0" prefWidth="200.0" />
+                        <JFXComboBox fx:id="txtdoctor" labelFloat="true" maxWidth="200.0" prefHeight="25.0" prefWidth="200.0" promptText="Doctor" visibleRowCount="5">
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXComboBox>
+                        <Region disable="true" layoutX="10.0" layoutY="122.0" prefHeight="57.0" prefWidth="400.0" />
+                        <JFXButton fx:id="btnsavebill" buttonType="RAISED" minWidth="0.0" onAction="#savebill" prefHeight="38.0" prefWidth="150.0" ripplerFill="#0d1d75" styleClass="login-button" text="Save">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CHECK" size="20" text="" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Region layoutX="10.0" layoutY="177.0" prefHeight="30.0" prefWidth="400.0" />
+                        <JFXButton fx:id="btnclearbill" buttonType="RAISED" minWidth="0.0" onAction="#clearall" prefHeight="38.0" prefWidth="150.0" ripplerFill="#0d1d75" styleClass="login-button" text="Clear All">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CHECK" size="20" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Region layoutX="10.0" layoutY="283.0" prefHeight="29.0" prefWidth="400.0" />
+                        <JFXButton fx:id="btnprintbill" buttonType="RAISED" disable="true" layoutX="110.0" layoutY="234.0" onAction="#printbill" prefHeight="38.0" prefWidth="150.0" ripplerFill="#0d1d75" styleClass="login-button" text="Print Bill">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PRINT" size="20" />
+                           </graphic>
+                           <VBox.margin>
+                              <Insets left="100.0" right="100.0" />
+                           </VBox.margin>
+                        </JFXButton>
+                        <Region layoutX="10.0" layoutY="351.0" prefHeight="29.0" prefWidth="400.0" VBox.vgrow="ALWAYS" />
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </HBox>
+   </center>
+</BorderPane>

@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="700.0" prefWidth="900.0" style="-fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Admin.Test.addTest.Addtest">
+   <center>
+      <AnchorPane prefHeight="700.0" prefWidth="900.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane minWidth="30.0" prefHeight="600.0" prefWidth="300.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXComboBox fx:id="dept" labelFloat="true" layoutX="59.0" layoutY="68.0" prefHeight="39.0" prefWidth="274.0" promptText="Department" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="testtype" labelFloat="true" layoutX="58.0" layoutY="216.0" prefHeight="39.0" prefWidth="274.0" promptText="Test Type" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="64.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXComboBox>
+
+                        <JFXButton contentDisplay="CENTER" layoutX="41.0" layoutY="26.0" onAction="#openTest" text=" " AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                           <graphic>
+                              <FontAwesomeIconView glyphName="ARROW_CIRCLE_LEFT" size="30" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnnewdept" layoutX="244.0" layoutY="76.0" onAction="#newdept" text="New" AnchorPane.rightAnchor="10.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding></JFXButton>
+                        <JFXButton fx:id="btnnewtype" layoutX="244.0" layoutY="224.0" onAction="#newTestType" text="New" AnchorPane.rightAnchor="12.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnsavetype" layoutX="60.0" layoutY="382.0" onAction="#savetype" prefHeight="37.0" prefWidth="173.0" text="Save" AnchorPane.rightAnchor="67.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnsavedept" layoutX="56.0" layoutY="152.0" onAction="#savedept" text="Save" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="62.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXTextField fx:id="testname" labelFloat="true" layoutX="58.0" layoutY="458.0" prefHeight="39.0" prefWidth="274.0" promptText="Test Name" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="66.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="testcost" labelFloat="true" layoutX="164.0" layoutY="304.0" prefHeight="37.0" prefWidth="80.0" promptText="COST" AnchorPane.rightAnchor="56.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="testprice" labelFloat="true" layoutX="58.0" layoutY="304.0" prefHeight="37.0" prefWidth="80.0" promptText="PRICE" AnchorPane.leftAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXButton fx:id="btnsavetest" layoutX="150.0" layoutY="537.0" onAction="#savetest" prefHeight="37.0" prefWidth="80.0" text="Save Test" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btnedittest" layoutX="56.0" layoutY="537.0" onAction="#edittest" prefHeight="37.0" prefWidth="50.0" text="Add New Test" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXButton fx:id="btncleartest" layoutX="58.0" layoutY="537.0" onAction="#cleartest" prefWidth="80.0" text="Clear" AnchorPane.leftAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </AnchorPane>
+                  <AnchorPane minWidth="300.0" prefHeight="600.0" prefWidth="300.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXCheckBox fx:id="chknounit" layoutX="59.0" layoutY="139.0" prefHeight="67.0" prefWidth="351.0" text="Test Without Unit" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="71.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXCheckBox>
+                        <JFXComboBox fx:id="txtsex" editable="true" labelFloat="true" layoutX="56.0" layoutY="213.0" prefHeight="39.0" prefWidth="274.0" promptText="SEX" AnchorPane.leftAnchor="56.0" AnchorPane.rightAnchor="72.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="txtunit" labelFloat="true" layoutX="57.0" layoutY="282.0" promptText="UNIT" AnchorPane.leftAnchor="57.0" AnchorPane.rightAnchor="71.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <Label layoutX="55.0" layoutY="77.0" prefHeight="38.0" prefWidth="186.0" text="Normal Values" underline="true" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="65.0">
+                           <font>
+                              <Font name="System Bold Italic" size="22.0" />
+                           </font>
+                        </Label>
+                        <JFXCheckBox fx:id="chkforallages" layoutX="24.0" layoutY="360.0" prefHeight="67.0" prefWidth="230.0" text="Same Normal Values for All Ages" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </JFXCheckBox>
+                        <Label layoutX="37.0" layoutY="439.0" prefHeight="37.0" prefWidth="64.0" text="AGE" AnchorPane.leftAnchor="40.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="35.0" layoutY="482.0" prefHeight="37.0" prefWidth="53.0" text="FROM" AnchorPane.leftAnchor="40.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="37.0" layoutY="534.0" prefHeight="37.0" prefWidth="53.0" text="TO" AnchorPane.leftAnchor="40.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="110.0" layoutY="439.0" prefHeight="37.0" prefWidth="64.0" text="Years">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <Label layoutX="164.0" layoutY="439.0" prefHeight="37.0" prefWidth="64.0" text="Months">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </Label>
+                        <TextField fx:id="txtfyear" layoutX="110.0" layoutY="482.0" prefHeight="25.0" prefWidth="50.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="txtfmonth" layoutX="176.0" layoutY="482.0" prefHeight="25.0" prefWidth="50.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="txttyear" layoutX="109.0" layoutY="534.0" prefHeight="25.0" prefWidth="50.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                        <TextField fx:id="txttmonth" layoutX="176.0" layoutY="534.0" prefHeight="25.0" prefWidth="50.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="10.0" layoutY="10.0" minWidth="30.0" prefHeight="600.0" prefWidth="300.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" HBox.hgrow="ALWAYS">
+                     <children>
+                        <JFXButton fx:id="btnclear" layoutX="99.0" layoutY="272.0" onAction="#clearAll" prefHeight="25.0" prefWidth="70.0" text="Clear All" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                        <JFXTextField fx:id="txtrangef" labelFloat="true" layoutX="58.0" layoutY="45.0" promptText="Value From" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="60.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtranget" labelFloat="true" layoutX="60.0" layoutY="114.0" promptText="Value To" AnchorPane.leftAnchor="60.0" AnchorPane.rightAnchor="60.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXButton fx:id="btnaddnormal" layoutX="93.0" layoutY="189.0" onAction="#addnormal" text="Add Normal" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXButton>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.8.0.final using JasperReports Library version 6.8.0-2ed8dfabb690ff337a5797129f2cd92902b0c87b  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="FinalResult1" pageWidth="792" pageHeight="612" orientation="Landscape" columnWidth="752" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isIgnorePagination="true" uuid="23d1d3bc-9db3-4a6f-8301-cc67234e8b37">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Style1" fill="Solid" radius="2" pattern=""/>
+	<subDataset name="ListDataSet" uuid="a6063b61-3017-4479-9c6f-ae1178b11b30">
+		<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="Field_1" class="java.lang.String"/>
+	</subDataset>
+	<field name="testname" class="java.lang.String"/>
+	<field name="serialno" class="java.lang.Integer"/>
+	<field name="price" class="java.lang.Double"/>
+	<field name="totalamt" class="java.lang.Double"/>
+	<field name="paidamt" class="java.lang.Double"/>
+	<field name="discountamt" class="java.lang.Double"/>
+	<field name="pendingamt" class="java.lang.String"/>
+	<field name="patientname" class="java.lang.String"/>
+	<field name="doctorname" class="java.lang.String"/>
+	<field name="age" class="java.lang.Float"/>
+	<field name="sex" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="98" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="70" width="270" height="28" forecolor="#000000" backcolor="#461DB5" uuid="7017d608-8cef-43c5-8f90-f6cb9feda51d"/>
+				<textElement textAlignment="Center">
+					<font fontName="Segoe Script" size="16" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Receipt]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="44" width="551" height="26" uuid="b2895f12-684e-4d39-ab87-8d8a1a39aae2"/>
+				<textElement>
+					<font fontName="Century" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Address : valaiPada Road ,Santosh Bhuvan, Nallasopara(East) , Palghar 401209 ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="14" width="200" height="66" uuid="46207246-c280-48ef-a6d0-31d08aac9064"/>
+				<textElement>
+					<font fontName="Comic Sans MS" size="12"/>
+				</textElement>
+				<text><![CDATA[Contact :                                               Mobile Number:                                  Email Id:      ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="10" width="440" height="30" uuid="f0cfdb9c-dfe0-47ce-ba1b-04cfd0dc1f03"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Century" size="22" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Health Checkup Diagnostics Center]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="82" splitType="Stretch">
+			<staticText>
+				<reportElement x="-7" y="7" width="100" height="23" uuid="39aaaee5-ffb6-4f1a-b89e-f6ae7527f941"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Patient Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="7" width="100" height="23" uuid="b1401bf1-c422-4269-83cf-e9a8f03e665d"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Doctor Name :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="-10" y="40" width="103" height="23" uuid="1dd9cfed-77f7-410d-bddf-079423491410"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Age :]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="420" y="50" width="100" height="23" uuid="49666c0b-175a-4c5f-a5ca-aaedbae50709"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sex:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="119" y="3" width="211" height="30" uuid="28c9a1bf-6c4e-40cb-90a8-1218594f6906"/>
+				<textFieldExpression><![CDATA[$F{patientname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="3" width="160" height="30" uuid="952346ed-58d5-4bba-bc69-e4831ec26aa8"/>
+				<textFieldExpression><![CDATA[$F{doctorname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="121" y="40" width="209" height="30" uuid="c9560f92-17cd-4809-b7dd-8a9ed853d065"/>
+				<textFieldExpression><![CDATA[$F{age}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="560" y="43" width="160" height="30" uuid="6265d537-63c5-4e2e-8a2e-0d6d969cab22"/>
+				<textFieldExpression><![CDATA[$F{sex}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="51" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="13" width="100" height="27" uuid="d9ee5107-4acc-4247-ac8c-3b4d68df7701"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sr.NO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="200" y="12" width="310" height="27" uuid="ed561694-5267-4f22-b217-74aedc983a23"/>
+				<textElement textAlignment="Center">
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Test Name]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-20" y="50" width="792" height="1" uuid="4f0060f0-9911-44e5-a6db-098afa4aed13"/>
+			</line>
+			<line>
+				<reportElement x="-20" y="5" width="792" height="1" uuid="e49fa597-1a0c-4fe7-8a76-0e4a598b9c92"/>
+			</line>
+			<line>
+				<reportElement x="119" y="6" width="1" height="44" uuid="3d1b6498-0175-469a-a313-b31ca1616bb1"/>
+			</line>
+			<staticText>
+				<reportElement x="620" y="12" width="100" height="26" uuid="76e2c944-aa27-4b20-8d65-7df1d2cd85b1"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Test Price]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="31" splitType="Stretch">
+			<line>
+				<reportElement x="580" y="0" width="1" height="31" uuid="47e5a687-8bfb-4e3e-9e84-a3e6559c27a3">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="580" y="-46" width="1" height="46" uuid="de42d2bf-9a95-418b-aba1-cbd742b99480">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<line>
+				<reportElement x="-20" y="30" width="792" height="1" uuid="49968853-0ccd-4ffc-a028-8fdb47e7ac97">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+			<textField>
+				<reportElement x="320" y="0" width="100" height="30" uuid="5987761d-4666-4660-86a0-34dd1f39d8d2">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="2dfbec19-95eb-4b8e-b905-88677c5fef57"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{testname}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="-7" y="0" width="100" height="30" uuid="fbe7c5ea-c21a-4c90-b576-f9f23c53fa9d">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b54c9312-c54a-4e60-aae3-b38b4f616992"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{serialno}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="630" y="0" width="100" height="30" uuid="0a8f5459-eb2a-4d35-a729-0fd2310d6035">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="f805e7ee-d4c6-4f63-a954-90fd37f0d65e"/>
+				</reportElement>
+				<textFieldExpression><![CDATA[$F{price}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="120" y="0" width="1" height="31" uuid="9479168a-ff6a-4b90-a4f7-07dd1650e1c5">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="132">
+			<staticText>
+				<reportElement x="400" y="4" width="160" height="23" uuid="9ef3fd4a-290a-4e91-a801-48ff0de591ad"/>
+				<textElement>
+					<font fontName="Comic Sans MS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Total Amount:]]></text>
+			</staticText>
+			<line>
+				<reportElement x="-10" y="120" width="792" height="1" uuid="c668f2b0-2f84-4abd-9b86-00b7d1261a28">
+					<property name="com.jaspersoft.studio.unit.width" value="px"/>
+				</reportElement>
+			</line>
+			<staticText>
+				<reportElement x="400" y="32" width="160" height="28" uuid="25ebc7cc-6bab-482d-8d91-eb4d4ae16ecc"/>
+				<textElement>
+					<font fontName="Comic Sans MS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Paid Amount:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="400" y="60" width="160" height="28" uuid="4671474f-0367-44e6-b9ce-c1668e15c4d1">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Comic Sans MS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Discount Amount:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="570" y="4" width="100" height="23" uuid="c0f928f9-6078-4bdd-b51c-e777cc0cdb3c"/>
+				<textFieldExpression><![CDATA[$F{totalamt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="34" width="100" height="23" uuid="3a2c3bd4-a31d-48b0-b159-f79f9dea72f0"/>
+				<textFieldExpression><![CDATA[$F{paidamt}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="400" y="93" width="160" height="28" uuid="e2907572-003f-484c-832a-5a46d4e886de">
+					<property name="com.jaspersoft.studio.unit.height" value="px"/>
+				</reportElement>
+				<textElement>
+					<font fontName="Comic Sans MS" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Pending Amount:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="570" y="59" width="100" height="21" uuid="adb08598-352f-471a-b765-7109f1ea7050"/>
+				<textFieldExpression><![CDATA[$F{discountamt}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="570" y="88" width="100" height="22" forecolor="#FC0E0A" uuid="17f36a10-1f26-4edd-aba5-f81a3560c9bc"/>
+				<textFieldExpression><![CDATA[$F{pendingamt}]]></textFieldExpression>
+			</textField>
+		</band>
+	</columnFooter>
+	<pageFooter>
+		<band height="73" splitType="Stretch">
+			<staticText>
+				<reportElement x="560" y="33" width="65" height="27" uuid="fcaac0fd-bd5c-42bb-8828-9a7e2de149c2"/>
+				<textElement>
+					<font fontName="Calibri" size="18" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Head]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="10" y="10" width="50" height="23" uuid="e0e53133-6bcc-4123-90b7-1cf97cd2a248"/>
+				<textElement>
+					<font fontName="Calibri" size="14" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Date:]]></text>
+			</staticText>
+			<textField pattern="MMMMM dd, yyyy">
+				<reportElement x="80" y="10" width="120" height="20" uuid="7d277f65-7177-4ac0-b885-5fdbf78744d3"/>
+				<textElement>
+					<font fontName="Calibri" size="12" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageFooter>
+</jasperReport>

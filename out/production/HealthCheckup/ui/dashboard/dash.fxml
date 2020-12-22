@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.dashboard.DashController">
+   <children>
+      <BorderPane prefHeight="588.0" prefWidth="1051.0" style="-fx-background-color: derive(grey,100%);" stylesheets="@../mainCss.css">
+          <left>
+              <AnchorPane prefHeight="471.0" prefWidth="179.0" BorderPane.alignment="CENTER">
+                  <children>
+                      <VBox layoutY="1.0" prefHeight="471.0" prefWidth="181.0" style="-fx-background-color: #300d33;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+                          <children>
+                              <JFXButton fx:id="btnback" alignment="BASELINE_LEFT" buttonType="RAISED" onAction="#back" prefHeight="50.0" prefWidth="148.0" styleClass="login-button" text="Back" textFill="WHITE">
+                                  <font>
+                                      <Font name="Comic Sans MS Bold" size="13.0" />
+                                  </font>
+                                  <effect>
+                                      <Glow />
+                                  </effect>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="641.0" text="Dashboard" textFill="WHITE" VBox.vgrow="ALWAYS">
+                                  <font>
+                                      <Font name="Consolas Bold" size="14.0" />
+                                  </font>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" prefHeight="47.0" prefWidth="178.0" text="Assistant" textFill="WHITE">
+                                  <font>
+                                      <Font name="Consolas Bold" size="14.0" />
+                                  </font>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="641.0" text="Blood Report" textFill="WHITE">
+                                  <font>
+                                      <Font name="Consolas Bold" size="14.0" />
+                                  </font>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="641.0" text="Receipts" textFill="WHITE">
+                                  <font>
+                                      <Font name="Consolas Bold" size="14.0" />
+                                  </font>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="641.0" text="Account" textFill="WHITE">
+                                  <font>
+                                      <Font name="Consolas Bold" size="14.0" />
+                                  </font>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" prefHeight="25.0" prefWidth="641.0" text="Setting" textFill="WHITE">
+                                  <font>
+                                      <Font name="Consolas Bold" size="14.0" />
+                                  </font>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                          </children>
+                          <padding>
+                              <Insets top="70.0" />
+                          </padding>
+                      </VBox>
+                      <VBox layoutX="10.0" layoutY="409.0" prefHeight="47.0" prefWidth="180.0" style="-fx-background-color: #300d33; -fx-background-radius: 0 60 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="-1.0">
+                          <children>
+                              <JFXButton alignment="BASELINE_LEFT" prefHeight="47.0" prefWidth="149.0" text="Logout" textFill="WHITE">
+                                  <font>
+                                      <Font name="Consolas Bold" size="14.0" />
+                                  </font>
+                                  <VBox.margin>
+                                      <Insets left="30.0" />
+                                  </VBox.margin>
+                                  <padding>
+                                      <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                  </padding>
+                              </JFXButton>
+                          </children>
+                          <padding>
+                              <Insets bottom="10.0" />
+                          </padding>
+                      </VBox>
+                  </children>
+              </AnchorPane>
+          </left>
+          <center>
+              <AnchorPane fx:id="paneanchormain" prefHeight="556.0" prefWidth="872.0" style="-fx-background-color: derive(grey,100%);" BorderPane.alignment="CENTER">
+                  <children>
+                      <FlowPane alignment="CENTER" layoutX="66.0" layoutY="191.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="100.0">
+                          <children>
+                              <VBox>
+                                  <children>
+                                      <HBox prefHeight="129.0" prefWidth="753.0">
+                                          <children>
+                                              <JFXButton onAction="#patientRegistration" prefHeight="250.0" prefWidth="178.0" styleClass="buttonForHome" text="Patient Registration" HBox.hgrow="ALWAYS" />
+                                              <Region prefHeight="110.0" prefWidth="70.0" />
+                                              <JFXButton layoutX="10.0" layoutY="10.0" onAction="#billing" prefHeight="143.0" prefWidth="209.0" styleClass="buttonForHome" text="Bill Receipt" HBox.hgrow="ALWAYS" />
+                                              <Region layoutX="225.0" layoutY="10.0" prefHeight="110.0" prefWidth="70.0" />
+                                              <JFXButton layoutX="295.0" layoutY="10.0" onAction="#report" prefHeight="144.0" prefWidth="209.0" styleClass="buttonForHome" text="Report" HBox.hgrow="ALWAYS" />
+                                          </children>
+                                          <effect>
+                                              <DropShadow />
+                                          </effect>
+                                      </HBox>
+                                      <Region prefHeight="68.0" prefWidth="753.0" />
+                                      <HBox prefHeight="120.0" prefWidth="753.0">
+                                          <children>
+                                              <JFXButton onAction="#sampleTest" prefHeight="134.0" prefWidth="203.0" styleClass="buttonForHome" text="Sample Test" />
+                                              <Region prefHeight="110.0" prefWidth="70.0" />
+                                              <JFXButton layoutX="10.0" layoutY="10.0" onAction="#sampleCollection" prefHeight="131.0" prefWidth="211.0" styleClass="buttonForHome" text="Sample Collections">
+                                                  <font>
+                                                      <Font name="Constantia" size="12.0" />
+                                                  </font>
+                                              </JFXButton>
+                                              <Region layoutX="225.0" layoutY="10.0" prefHeight="110.0" prefWidth="70.0" />
+                                              <JFXButton layoutX="295.0" layoutY="10.0" onAction="#receipt" prefHeight="110.0" prefWidth="215.0" styleClass="buttonForHome" text="Generate Receipt" />
+                                          </children>
+                                          <effect>
+                                              <DropShadow />
+                                          </effect>
+                                      </HBox>
+                                  </children>
+                              </VBox>
+                          </children>
+                      </FlowPane>
+                  </children>
+                  <BorderPane.margin>
+                      <Insets top="91.0" />
+                  </BorderPane.margin>
+                  <effect>
+                      <DropShadow />
+                  </effect>
+              </AnchorPane>
+          </center>
+      </BorderPane>
+   </children>
+</StackPane>

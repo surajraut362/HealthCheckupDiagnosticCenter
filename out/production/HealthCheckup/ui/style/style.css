@@ -1,0 +1,15 @@
+
+*{
+    -fx-primary : #fff ;
+
+    /*-fx-primary : #2B2B2B ;*/
+    -fx-secondary : #300d33;
+    -fx-primarytext : #000;
+    -fx-red : #cc2900;
+    -fx-white : #fff;
+    -fx-dark : #222;
+    -fx-prompt-text-fill :  derive(-fx-primarytext,-30%);
+    -fx-yellow: #e2ba67;
+}
+
+

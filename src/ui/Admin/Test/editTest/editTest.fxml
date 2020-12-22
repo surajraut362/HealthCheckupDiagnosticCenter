@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXTimePicker?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="720.0" prefWidth="1080.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Admin.Test.editTest.EditTest">
+   <center>
+      <AnchorPane fx:id="anchorcenter" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="1046.0">
+         <children>
+            <AnchorPane minWidth="300.0" prefHeight="720.0" prefWidth="608.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <HBox AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane minWidth="30.0" prefHeight="720.0" prefWidth="307.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" HBox.hgrow="ALWAYS">
+                           <children>
+                              <FontAwesomeIconView fx:id="glyidverify" disable="true" glyphName="CHECK_SQUARE_ALT" layoutX="258.0" layoutY="153.0" size="20" visible="false" />
+                              <JFXComboBox labelFloat="true" layoutX="51.0" layoutY="60.0" prefHeight="39.0" prefWidth="200.0" promptText="Department" AnchorPane.leftAnchor="58.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXComboBox>
+                              <JFXComboBox editable="true" labelFloat="true" layoutX="58.0" layoutY="133.0" prefHeight="39.0" prefWidth="200.0" promptText="Type" AnchorPane.leftAnchor="58.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXComboBox>
+                              <JFXComboBox labelFloat="true" layoutX="57.0" layoutY="215.0" prefWidth="200.0" promptText="Test" AnchorPane.leftAnchor="58.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXComboBox>
+                              <JFXButton contentDisplay="CENTER" layoutX="14.0" layoutY="26.0" onAction="#openTest" text=" " AnchorPane.leftAnchor="30.0">
+                                 <graphic>
+                                    <FontAwesomeIconView glyphName="HOME" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton layoutX="66.0" layoutY="313.0" text="Fetch detail" AnchorPane.leftAnchor="58.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXButton>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </AnchorPane>
+                        <AnchorPane minWidth="300.0" prefHeight="720.0" prefWidth="327.0" style="-fx-border-color: #333; -fx-border-width: 0 1 0 0;" HBox.hgrow="ALWAYS">
+                           <children>
+                              <JFXTextField labelFloat="true" layoutX="103.0" layoutY="208.0" prefHeight="37.0" prefWidth="200.0" promptText="COST" AnchorPane.leftAnchor="58.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXTextField>
+                              <JFXTextField labelFloat="true" layoutX="65.0" layoutY="274.0" prefHeight="37.0" prefWidth="200.0" promptText="PRICE" AnchorPane.leftAnchor="58.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXTextField>
+                              <Label layoutX="59.0" layoutY="406.0" prefHeight="38.0" prefWidth="186.0" text="Reporting Time" underline="true" AnchorPane.leftAnchor="59.0" AnchorPane.rightAnchor="59.0">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                              <JFXTimePicker layoutX="60.0" layoutY="533.0" prefHeight="45.0" prefWidth="200.0" promptText="Time" AnchorPane.leftAnchor="59.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXTimePicker>
+                              <JFXTextField labelFloat="true" layoutX="60.0" layoutY="476.0" prefHeight="37.0" prefWidth="200.0" promptText="Days" AnchorPane.leftAnchor="59.0">
+                                 <padding>
+                                    <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                 </padding>
+                              </JFXTextField>
+                              <Label layoutX="66.0" layoutY="88.0" prefHeight="38.0" prefWidth="200.0" text="Cost &amp; Pricing" underline="true" AnchorPane.leftAnchor="58.0">
+                                 <font>
+                                    <Font name="System Bold Italic" size="22.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

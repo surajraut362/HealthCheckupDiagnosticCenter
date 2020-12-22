@@ -1,0 +1,17 @@
+
+* {
+    -fx-primary: #fff;
+
+    /*-fx-primary : #2B2B2B ;*/
+    -fx-secondary: #300d33;
+}
+.tab{
+    -fx-pref-height: 43;
+    -fx-pref-width: 220;
+    -fx-background-color:-fx-secondary ;
+
+}
+.tab-header-background
+{
+    -fx-background-color: -fx-secondary;
+}

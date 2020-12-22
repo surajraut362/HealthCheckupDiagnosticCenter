@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialicons.MaterialIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Admin.AdminDash.AdminDash">
+   <children>
+      <BorderPane fx:id="mainBorder" prefHeight="588.0" prefWidth="1051.0" style="-fx-background-color: derive(grey,100%);" stylesheets="@../../mainCss.css" StackPane.alignment="CENTER">
+         <center>
+            <AnchorPane BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+               <children>
+                  <AnchorPane fx:id="paneanchormain" layoutX="80.0" layoutY="9.0" minWidth="0.0" prefHeight="517.0" prefWidth="1000.0" style="-fx-background-color: derive(grey,100%);" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <FlowPane alignment="CENTER" layoutX="66.0" layoutY="191.0" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="44.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <VBox>
+                                 <children>
+                                    <HBox prefHeight="129.0" prefWidth="753.0">
+                                       <children>
+                                          <JFXButton onAction="#onTestClick" prefHeight="250.0" prefWidth="178.0" ripplerFill="#300d39" styleClass="buttonForHome" text="All Test " HBox.hgrow="ALWAYS" />
+                                          <Region prefHeight="110.0" prefWidth="70.0" />
+                                          <JFXButton layoutX="10.0" layoutY="10.0" onAction="#onDailyCollection" prefHeight="143.0" prefWidth="209.0" ripplerFill="#300d39" styleClass="buttonForHome" text="Daily Collection" HBox.hgrow="ALWAYS" />
+                                          <Region layoutX="225.0" layoutY="10.0" prefHeight="110.0" prefWidth="70.0" />
+                                          <JFXButton layoutX="295.0" layoutY="10.0" onAction="#onAssistantClick" prefHeight="144.0" prefWidth="209.0" ripplerFill="#300d39" styleClass="buttonForHome" text="Assistants" HBox.hgrow="ALWAYS" />
+                                       </children>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </HBox>
+                                    <Region prefHeight="68.0" prefWidth="753.0" />
+                                    <HBox prefHeight="120.0" prefWidth="753.0">
+                                       <children>
+                                          <JFXButton onAction="#onDoctorClick" prefHeight="134.0" prefWidth="203.0" ripplerFill="#300d39" styleClass="buttonForHome" text="Doctors" />
+                                          <Region prefHeight="110.0" prefWidth="70.0" />
+                                          <JFXButton layoutX="10.0" layoutY="10.0" onAction="#onSwitchClick" prefHeight="131.0" prefWidth="211.0" ripplerFill="#300d39" styleClass="buttonForHome" text="Switch-&gt;Assistant">
+                                             <font>
+                                                <Font name="Constantia" size="12.0" />
+                                             </font>
+                                          </JFXButton>
+                                          <Region layoutX="225.0" layoutY="10.0" prefHeight="110.0" prefWidth="70.0" />
+                                          <JFXButton layoutX="295.0" layoutY="10.0" prefHeight="110.0" prefWidth="215.0" ripplerFill="#300d39" styleClass="buttonForHome" text="Help &amp; Support" />
+                                       </children>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </FlowPane>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane fx:id="panenav" minWidth="0.0" prefHeight="588.0" prefWidth="50.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0; -fx-background-color: #300d39;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <AnchorPane maxWidth="50.0" minWidth="0.0" prefHeight="66.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <JFXButton fx:id="btnhamburger" alignment="BASELINE_LEFT" minWidth="0.0" onAction="#toggleNav" prefHeight="33.0" prefWidth="50.0" text=" " AnchorPane.leftAnchor="0.0">
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="SERVER" size="20" text="" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                        <VBox layoutY="66.0" minWidth="0.0" prefHeight="325.0" prefWidth="80.0" AnchorPane.bottomAnchor="173.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="90.0">
+                           <children>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="200.0" minWidth="0.0" onAction="#onDashboardClick" prefHeight="50.0" prefWidth="200.0" text="HOME" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="HOME" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="200.0" minWidth="0.0" onAction="#onDoctorClick" prefHeight="50.0" prefWidth="200.0" text="Doctors" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="USER_MD" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="200.0" minWidth="0.0" onAction="#onSwitchClick" prefHeight="50.0" prefWidth="200.0" text="Switch(Assistant)" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="200.0" minWidth="0.0" onAction="#onDailyCollection" prefHeight="50.0" prefWidth="200.0" text="Daily Collection" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <MaterialIconView fill="WHITE" glyphName="ASSIGNMENT" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="200.0" minWidth="0.0" onAction="#onTestClick" prefHeight="50.0" prefWidth="200.0" text="Tests" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="BOOK" size="20" text="" />
+                                 </graphic>
+                              </JFXButton>
+                              <JFXButton alignment="BASELINE_LEFT" graphicTextGap="15.0" maxWidth="200.0" minWidth="0.0" onAction="#onAssistantClick" prefHeight="50.0" prefWidth="200.0" text="Assistant" textFill="WHITE">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" glyphName="GROUP" size="20" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </VBox>
+                        <AnchorPane layoutY="561.0" minWidth="0.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                           <children>
+                              <JFXButton alignment="BASELINE_LEFT" minWidth="0.0" onAction="#logout" prefHeight="50.0" prefWidth="200.0" text=" Logout" textFill="WHITE" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                                 <font>
+                                    <Font name="Consolas Bold" size="14.0" />
+                                 </font>
+                                 <padding>
+                                    <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                                 </padding>
+                                 <graphic>
+                                    <FontAwesomeIconView fill="WHITE" size="20" text="" />
+                                 </graphic>
+                              </JFXButton>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

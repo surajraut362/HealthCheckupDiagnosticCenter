@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="patientborder" minHeight="650.0" minWidth="802.0" prefHeight="650.0" prefWidth="1102.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.patient.Patient">
+   <center>
+      <AnchorPane BorderPane.alignment="CENTER">
+         <children>
+            <BorderPane fx:id="panebilling" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+            <AnchorPane fx:id="panepatient" minHeight="600.0" minWidth="800.0" prefHeight="600.0" prefWidth="1046.0" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane fx:id="panetop" layoutX="389.0" layoutY="14.0" minHeight="100.0" minWidth="713.0" prefHeight="115.0" prefWidth="713.0" AnchorPane.leftAnchor="389.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="btnsearch" buttonType="RAISED" layoutX="501.0" layoutY="44.0" onAction="#search" prefHeight="36.0" prefWidth="131.0" ripplerFill="#0d1d75" styleClass="login-button" text="Search" AnchorPane.bottomAnchor="35.0" AnchorPane.topAnchor="44.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="SEARCH" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXComboBox fx:id="txtsearchby" labelFloat="true" layoutX="295.0" layoutY="44.0" prefHeight="35.0" prefWidth="192.0" promptText="Search By">
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="txtsearch" labelFloat="true" layoutX="26.0" layoutY="53.0" prefHeight="37.0" prefWidth="211.0" promptText="Search Test" AnchorPane.bottomAnchor="35.0" AnchorPane.leftAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                     </children>
+                  </AnchorPane>
+                  <TableView fx:id="tbltest" layoutX="389.0" minHeight="60.0" minWidth="492.0" prefHeight="515.0" prefWidth="539.0" styleClass="root" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="389.0" AnchorPane.rightAnchor="144.0" AnchorPane.topAnchor="115.0">
+                     <columns>
+                        <TableColumn fx:id="coldept" editable="false" minWidth="87.0" prefWidth="87.0" resizable="false" text="Department" />
+                        <TableColumn fx:id="coltestname" editable="false" minWidth="114.0" prefWidth="178.0" resizable="false" text="Test Name" />
+                        <TableColumn fx:id="coltestprice" editable="false" prefWidth="116.0" resizable="false" text="Price" />
+                        <TableColumn fx:id="colselectall" editable="false" prefWidth="159.0" resizable="false">
+                           <graphic>
+                              <CheckBox fx:id="chkselectall" contentDisplay="CENTER" mnemonicParsing="false" prefHeight="27.0" prefWidth="137.5" text="Select All" />
+                           </graphic>
+                        </TableColumn>
+                     </columns>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </TableView>
+                  <AnchorPane minWidth="300.0" prefHeight="650.0" prefWidth="389.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <JFXButton fx:id="btnpatientclear" buttonType="RAISED" layoutX="68.0" layoutY="585.0" onAction="#clearpatient" prefHeight="34.0" prefWidth="114.0" ripplerFill="#0d1d75" styleClass="login-button" text="Clear">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CLOSE" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btneditpatient" buttonType="RAISED" layoutX="219.0" layoutY="584.0" onAction="#editpatient" prefHeight="36.0" prefWidth="116.0" styleClass="login-button" text="Update ">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <FontAwesomeIconView fx:id="glyidverify" disable="true" glyphName="CHECK_SQUARE_ALT" layoutX="258.0" layoutY="153.0" size="20" visible="false" />
+                        <JFXTextField fx:id="txtname" labelFloat="true" layoutX="52.0" layoutY="126.0" minWidth="200.0" prefHeight="39.0" prefWidth="274.0" promptText="Name" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXComboBox fx:id="txtsex" labelFloat="true" layoutX="51.0" layoutY="60.0" prefHeight="39.0" prefWidth="274.0" promptText="Title/Sex" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXComboBox fx:id="txtyear" editable="true" labelFloat="true" layoutX="136.0" layoutY="193.0" prefHeight="45.0" prefWidth="65.0" promptText="Age" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXComboBox>
+                        <JFXTextField fx:id="txtmobileno" labelFloat="true" layoutX="57.0" layoutY="261.0" minWidth="200.0" prefHeight="39.0" prefWidth="274.0" promptText="Mobile Number" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtaddress" labelFloat="true" layoutX="57.0" layoutY="325.0" minWidth="200.0" prefHeight="39.0" prefWidth="274.0" promptText="Address" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtstate" labelFloat="true" layoutX="58.0" layoutY="391.0" minWidth="200.0" prefHeight="39.0" prefWidth="274.0" promptText="State">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtemail" labelFloat="true" layoutX="66.0" layoutY="452.0" minWidth="200.0" prefHeight="39.0" prefWidth="274.0" promptText="Email" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXTextField fx:id="txtdetail" labelFloat="true" layoutX="62.0" layoutY="515.0" minWidth="200.0" prefHeight="39.0" prefWidth="274.0" promptText="Remarks" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="58.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </JFXTextField>
+                        <JFXButton fx:id="btnsavepatient" buttonType="RAISED" layoutX="219.0" layoutY="584.0" onAction="#savepatient" prefHeight="36.0" prefWidth="116.0" styleClass="login-button" text="Save">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" size="20" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="paneright" layoutX="958.0" layoutY="115.0" prefHeight="535.0" prefWidth="145.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="115.0">
+                     <children>
+                        <JFXButton fx:id="btnnextbilling" buttonType="RAISED" defaultButton="true" layoutX="25.0" layoutY="66.0" onAction="#proceed" prefHeight="38.0" prefWidth="109.0" ripplerFill="#0d1d75" styleClass="login-button" text="Proceed" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CHECK" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnshowtestall" buttonType="RAISED" layoutX="5.0" layoutY="14.0" onAction="#showAll" prefHeight="33.0" prefWidth="136.0" ripplerFill="#0d1d75" styleClass="login-button" text="Show All Test" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="BOOK" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btncleartest" buttonType="RAISED" layoutX="25.0" layoutY="128.0" onAction="#cleartest" prefHeight="34.0" prefWidth="114.0" ripplerFill="#0d1d75" styleClass="login-button" text="Clear" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="25.0">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CLOSE" size="20" />
+                           </graphic>
+                        </JFXButton>
+                        <JFXButton fx:id="btnpreview" buttonType="RAISED" layoutX="23.0" layoutY="177.0" onAction="#previewtest" prefHeight="34.0" prefWidth="99.0" ripplerFill="#0d1d75" styleClass="login-button" text="Preview">
+                           <font>
+                              <Font name="Comic Sans MS Bold" size="13.0" />
+                           </font>
+                           <effect>
+                              <Glow />
+                           </effect>
+                           <graphic>
+                              <FontAwesomeIconView glyphName="CLOSE" size="20" />
+                           </graphic>
+                        </JFXButton>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </AnchorPane>
+   </center>
+</BorderPane>

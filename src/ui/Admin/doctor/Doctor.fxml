@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="471.0" prefWidth="686.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.Admin.doctor.doctor">
+   <children>
+      <AnchorPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTabPane prefHeight="471.0" prefWidth="686.0" stylesheets="@../../style/doctor.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab style="-fx-background-color: #300d39;" text="NEW">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="524.0">
+                           <children>
+                              <HBox layoutX="7.0" layoutY="-9.0" prefHeight="428.0" prefWidth="686.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <FlowPane prefHeight="430.0" prefWidth="313.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox prefHeight="428.0" prefWidth="265.0">
+                                             <children>
+                                                <Region prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField labelFloat="true" promptText="Doctor Name" VBox.vgrow="ALWAYS" />
+                                                <Region layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField layoutX="10.0" layoutY="37.0" promptText="Contact Number" VBox.vgrow="ALWAYS" />
+                                                <Region layoutX="10.0" layoutY="62.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField layoutX="10.0" layoutY="89.0" prefHeight="25.0" prefWidth="245.0" promptText="Comm(%)" />
+                                                <Region layoutX="10.0" layoutY="114.0" prefHeight="54.0" prefWidth="248.0" />
+                                                <JFXButton prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="ADD" textFill="#f5f5f5" />
+                                                <Region layoutX="10.0" layoutY="114.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXButton layoutX="10.0" layoutY="220.0" prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="CANCEL" textFill="#f5f5f5" />
+                                                <Region layoutX="10.0" layoutY="263.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXButton layoutX="10.0" layoutY="290.0" prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="CLEAR" textFill="#f5f5f5" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets left="15.0" right="5.0" />
+                                             </FlowPane.margin>
+                                             <padding>
+                                                <Insets right="15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="1.0" />
+                                       </HBox.margin>
+                                    </FlowPane>
+                                    <Region prefHeight="1.0" prefWidth="1.0" />
+                                    <TableView prefHeight="428.0" prefWidth="428.0" HBox.hgrow="ALWAYS">
+                                      <columns>
+                                        <TableColumn prefWidth="75.0" text="C1" />
+                                        <TableColumn prefWidth="75.0" text="C2" />
+                                      </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab style="-fx-background-color: #300d39;" text="UPDATE">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="524.0">
+                           <children>
+                              <HBox layoutX="7.0" layoutY="-9.0" prefHeight="428.0" prefWidth="686.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <FlowPane prefHeight="430.0" prefWidth="313.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox prefHeight="428.0" prefWidth="265.0">
+                                             <children>
+                                                <Region prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField labelFloat="true" promptText="Doctor Name" VBox.vgrow="ALWAYS" />
+                                                <Region layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField layoutX="10.0" layoutY="37.0" promptText="Contact Number" VBox.vgrow="ALWAYS" />
+                                                <Region layoutX="10.0" layoutY="62.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField layoutX="10.0" layoutY="89.0" prefHeight="25.0" prefWidth="245.0" promptText="Comm(%)" />
+                                                <Region layoutX="10.0" layoutY="114.0" prefHeight="54.0" prefWidth="248.0" />
+                                                <JFXButton prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="UPDATE" textFill="#f5f5f5" />
+                                                <Region layoutX="10.0" layoutY="114.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXButton layoutX="10.0" layoutY="220.0" prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="CANCEL" textFill="#f5f5f5" />
+                                                <Region layoutX="10.0" layoutY="263.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXButton layoutX="10.0" layoutY="290.0" prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="CLEAR" textFill="#f5f5f5" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets left="15.0" right="5.0" />
+                                             </FlowPane.margin>
+                                             <padding>
+                                                <Insets right="15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="1.0" />
+                                       </HBox.margin>
+                                    </FlowPane>
+                                    <Region prefHeight="1.0" prefWidth="1.0" />
+                                    <TableView prefHeight="428.0" prefWidth="428.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-background-color: #300d39;" text="DELETE">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="524.0">
+                           <children>
+                              <HBox layoutX="7.0" layoutY="-9.0" prefHeight="428.0" prefWidth="686.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <FlowPane prefHeight="430.0" prefWidth="313.0" style="-fx-border-color: #333; -fx-border-width: 0 2 0 0;" HBox.hgrow="ALWAYS">
+                                       <children>
+                                          <VBox prefHeight="428.0" prefWidth="265.0">
+                                             <children>
+                                                <Region prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField labelFloat="true" promptText="Doctor Name" VBox.vgrow="ALWAYS" />
+                                                <Region layoutX="10.0" layoutY="10.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField layoutX="10.0" layoutY="37.0" promptText="Contact Number" VBox.vgrow="ALWAYS" />
+                                                <Region layoutX="10.0" layoutY="62.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXTextField layoutX="10.0" layoutY="89.0" prefHeight="25.0" prefWidth="245.0" promptText="Comm(%)" />
+                                                <Region layoutX="10.0" layoutY="114.0" prefHeight="54.0" prefWidth="248.0" />
+                                                <JFXButton prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="DELETE" textFill="#f5f5f5" />
+                                                <Region layoutX="10.0" layoutY="114.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXButton layoutX="10.0" layoutY="220.0" prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="CANCEL" textFill="#f5f5f5" />
+                                                <Region layoutX="10.0" layoutY="263.0" prefHeight="27.0" prefWidth="207.0" />
+                                                <JFXButton layoutX="10.0" layoutY="290.0" prefHeight="43.0" prefWidth="141.0" style="-fx-background-color: #300d39;" text="CLEAR" textFill="#f5f5f5" />
+                                             </children>
+                                             <FlowPane.margin>
+                                                <Insets left="15.0" right="5.0" />
+                                             </FlowPane.margin>
+                                             <padding>
+                                                <Insets right="15.0" />
+                                             </padding>
+                                          </VBox>
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="1.0" />
+                                       </HBox.margin>
+                                    </FlowPane>
+                                    <Region prefHeight="1.0" prefWidth="1.0" />
+                                    <TableView prefHeight="428.0" prefWidth="428.0" HBox.hgrow="ALWAYS">
+                                       <columns>
+                                          <TableColumn prefWidth="75.0" text="C1" />
+                                          <TableColumn prefWidth="75.0" text="C2" />
+                                       </columns>
+                                    </TableView>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="anchorpri" prefHeight="522.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sceneTesting.sceneTesting">
+   <children>
+      <AnchorPane fx:id="anchorsec" layoutX="149.0" layoutY="104.0" prefHeight="418.0" prefWidth="450.0">
+         <children>
+            <JFXTextField fx:id="txt1" layoutX="66.0" layoutY="71.0" prefHeight="81.0" prefWidth="244.0" />
+            <JFXButton fx:id="btn1" layoutX="155.0" layoutY="209.0" onAction="#next" prefHeight="25.0" prefWidth="145.0" style="-fx-background-color: yellow;" text="Next" textFill="#d35454" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
